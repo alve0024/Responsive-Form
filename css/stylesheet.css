@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    
+}
+
+form {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.box {
+    padding: 0.5rem;
+}
+
+label {
+    display: none;
+}
+
+input {
+    display: inline-block;
+    width: 100%;
+    padding: 1rem;
+}
+
+@media all and (min-width:35rem) and (max-width:60rem) {
+    .box {
+        float:left;
+        width:50%;
+    }
+    label {
+        display: block;
+    }
+    #btn {
+        margin: auto;
+        padding: 5rem;
+        width: auto;
+    }
+}
+
+@media all and (min-width:60rem){
+    label {
+        display: inline-block;
+        width: 80px;
+    }
+    input  {
+        display: inline-block;
+        width: 75%;     
+    }
+    .box {
+        float:left;
+        width:50%;
+    }
+}

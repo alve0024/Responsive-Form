@@ -1,0 +1,95 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Source+Serif+Pro);
+
+* {
+	margin: 0px;
+	padding: 0px;
+	border-collapse: collapse;
+	box-sizing: border-box;
+}
+
+.masterhead {
+	font-family: 'Source Serif Pro', serif;
+	color: white;
+	background-color: hsla(190, 100%, 17%, 1);
+	height: 100px;
+	text-align: center;	
+}
+ 
+h1 {
+	position: absolute;
+	margin-top: 20px;	
+}
+
+body {
+	background-color: hsla(190, 100%, 33%, 1);
+}
+
+form {
+	font-family: sans-serif;
+	position: relative;
+	width: 90%;
+	margin: 0 auto;
+}
+
+label {
+	display: none;
+}
+
+.column input {
+	width: 80%;
+	position: relative;
+	margin: 5px 0px 0px 25px;
+	padding: 0.5rem;
+}
+
+div.rows {
+	margin: auto;
+	width: 100%;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    label {
+    	display: block;
+    }
+
+    .column input {
+		width: 100%;
+	}
+	
+	div.rows div.row {
+		clear:both;    
+		width: 100%;
+	}
+
+	div.rows div.column {
+		float: left;
+		width: 50%;
+	}
+		
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1600px) {
+    label {
+    	display: inline-block;
+    	width: 5rem;
+    	text-align: right;
+    }
+
+    .column input {
+    	width: 100%;
+    }
+
+	div.rows div.row {
+		clear:both;    
+		width: 100%;
+	}
+
+	div.rows div.column {
+		float: left;
+		width: 50%;
+	}
+
+	  
+}
